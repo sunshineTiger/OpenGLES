@@ -109,6 +109,8 @@ public class Triangle {
                 GLES20.GL_FLOAT, false,
                 vertexStride, vertexBuffer);
 
+
+
         // 启用vertex Enable a handle to the triangle vertices
         GLES20.glEnableVertexAttribArray(mPositionHandle);
 
