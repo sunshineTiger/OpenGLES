@@ -53,11 +53,12 @@ public class Triangle {
 
     public Triangle() {
 
-        // 初始化形状中顶点坐标数据的字节缓冲区
+        // 初始化形状中顶点坐标数据的字节缓冲区xxxx
         // 通过 allocateDirect 方法获取到 DirectByteBuffer 实例
         ByteBuffer byteBuffer = ByteBuffer.allocateDirect(
                 // 顶点坐标个数 * 坐标数据类型 float 一个是 4 bytes
                 triangleCoords.length * 4
+
         );
 
         // 设置缓冲区使用设备硬件的原本字节顺序进行读取;
