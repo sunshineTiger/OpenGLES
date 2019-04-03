@@ -124,13 +124,14 @@ public class TextureCube {
         gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_MAG_FILTER, GL10.GL_LINEAR);
 
         // Construct an input stream to texture image "res\drawable\nehe.png"
-        @SuppressLint("ResourceType") InputStream istream = context.getResources().openRawResource(R.drawable.ic_launcher);
+        @SuppressLint("ResourceType") InputStream istream = context.getResources().openRawResource(R.drawable.bannertwo);
         Bitmap bitmap;
         try {
             // Read and decode input as bitmap
             bitmap = BitmapFactory.decodeStream(istream);
         } finally {
             try {
+
                 istream.close();
             } catch (IOException e) {
             }

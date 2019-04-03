@@ -2,6 +2,7 @@ package com.example.zhanghong.opengles.example6;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
+
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLU;
@@ -43,7 +44,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         gl.glViewport(0, 0, width, height);
         gl.glMatrixMode(GL10.GL_PROJECTION);// Select projection matrix
         gl.glLoadIdentity();                 // Reset projection matrix
-        GLU.gluPerspective(gl, 45, aspect, 0.1f, 100f);
+        GLU.gluPerspective(gl, 85, aspect, 0.1f, 100f);
         gl.glMatrixMode(GL10.GL_MODELVIEW);
         gl.glLoadIdentity();
     }
